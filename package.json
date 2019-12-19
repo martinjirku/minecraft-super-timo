@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "minecraft-supertimo-skins-web",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Web page for portfolio overview",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Martin Jirku <martinjirku@gmail.com>",
   "dependencies": {
     "gatsby": "^2.18.12",
     "gatsby-image": "^2.2.34",
@@ -16,13 +16,17 @@
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "skinview3d": "^1.2.0-alpha.1"
   },
   "devDependencies": {
     "prettier": "^1.19.1"
   },
   "keywords": [
-    "gatsby"
+    "minecraft",
+    "supertimo",
+    "skins",
+    "minecraft skins"
   ],
   "license": "MIT",
   "scripts": {
@@ -37,8 +41,5 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
   }
 }
