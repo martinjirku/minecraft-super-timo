@@ -1,6 +1,9 @@
 - name: supertimo
   title: Supertimo
   description: "Toto je môj vlastný skin Supertimo"
+- name: kylo-ren
+  title: Kylo Ren
+  description: "Star wars hrdina"
 - name: new-steve
   title: Nový Steve
   description: "Toto je nový Steve"
