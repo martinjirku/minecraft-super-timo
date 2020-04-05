@@ -1,11 +1,12 @@
-import { useState, useEffect, useRef } from "react"
+import { useState, useEffect } from "react"
+
+const IS_BROWSER = typeof window === "object"
 
 export default function useReferenceDimensions(refEl) {
-  const isBrowser = typeof window === "object"
   const [width, setWidth] = useState(0)
   const [height, setHeight] = useState(0)
   useEffect(() => {
-    if (!isBrowser) return false
+    if (!IS_BROWSER) return false
     const handleResize = () => {
       const domEl = refEl.current
       setWidth(domEl.clientWidth)
@@ -14,7 +15,7 @@ export default function useReferenceDimensions(refEl) {
     handleResize()
     window.addEventListener("resize", handleResize)
     return () => window.removeEventListener("resize", handleResize)
-  }, [])
+  }, [refEl])
   return {
     width,
     height,

@@ -12,24 +12,32 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Domov" />
-      <h1>Čaute!</h1>
-      <p>
-        Vitajte na mojich stránkach. Vyberte si z pripravených skinov, ktoré som
-        sám vytvoril.
-      </p>
-      <SkinList>
-        {skins.map(i => {
-          return (
-            <SkinListItem
-              key={i.name}
-              name={i.name}
-              title={i.title}
-              source={i.source}
-              description={i.description}
-            />
-          )
-        })}
-      </SkinList>
+      <section className="hero is-medium is-primary is-bold ">
+        <div className="hero-body">
+          <div className="container">
+            <h1 className="title">Čaute!</h1>
+            <p className="subtitle">
+              Vitajte na mojich stránkach. Vyberte si z pripravených skinov,
+              ktoré som sám vytvoril.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section className="section">
+        <SkinList>
+          {skins.map(i => {
+            return (
+              <SkinListItem
+                key={i.name}
+                name={i.name}
+                title={i.title}
+                source={i.source}
+                description={i.description}
+              />
+            )
+          })}
+        </SkinList>
+      </section>
     </Layout>
   )
 }

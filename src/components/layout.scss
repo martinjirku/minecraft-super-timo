@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+@import "~bulma/sass/utilities/initial-variables.sass";
+// If need, change your variables before importing Bulma
+$title-color: #ff0000;
+$navbar-background-color: transparent;
+$navbar-item-color: $white;
+$navbar-item-hover-color: $grey-lightest;
+
+@import "~bulma";
+
+header {
+  // background: url("/cube.jpg");
+  // background-position-x: repeat;
+  // background-size: contain;
+}
+
+.navbar-brand {
+  font-size: $size-2;
+}
