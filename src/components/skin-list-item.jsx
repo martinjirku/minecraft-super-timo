@@ -28,13 +28,14 @@ const SkinListItem = ({ name, title, source, description }) => {
           </div>
         </div>
         <div className="card-footer">
-          <a
-            className="card-footer-item"
-            href="#"
-            onClick={() => setIsWalking(!isWalking)}
-          >
-            {isWalking ? "Zastaviť" : "Animovať"}
-          </a>
+          <div className="card-footer-item">
+            <button
+              className="button is-inverted is-primary"
+              onClick={() => setIsWalking(!isWalking)}
+            >
+              {isWalking ? "Zastaviť" : "Animovať"}
+            </button>
+          </div>
           <a className="card-footer-item is-primary" href={source} download>
             Stiahnuť
           </a>
